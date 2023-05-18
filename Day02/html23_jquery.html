@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jQuery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <!-- 파일 다운방식
+    <script src="./js/jquery-3.7.0.min.js"></script>-->
+    <!-- CDN방식으로 js파일을 다운로드 할 필요가 없음 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 
+        crossorigin="anonymous"></script>
+    <script>
+        // jQuery로 온로드할때 방식
+        $(document).ready(function () {
+           // 여기에 로직을 적으면 됨
+           $('input').click(function () {
+            $('.page').slideToggle(500);
+           })
+
+           $('.box').css({
+                width: '100px',
+                height: '100px',
+                backgroundColor: 'red',
+           }).animate({
+                width: '500px',
+                opacity:0.5
+           }, 1500)
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="Toggle">
+    <div class="page">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis ipsa id asperiores veniam aliquam magni aspernatur, necessitatibus tempore laudantium numquam dolore facilis aut provident voluptas praesentium optio? Eligendi ad maxime consectetur incidunt officiis repellendus sed natus aliquid labore quas. Debitis, ex? Soluta reprehenderit porro vitae non quod facilis voluptate amet repellat mollitia. Dolorum quibusdam harum, obcaecati perferendis iusto, temporibus impedit exercitationem blanditiis unde tempora quo atque numquam nisi ea aperiam quas quod nemo odio hic ipsum! Quam quasi porro dolores sed quis tempora consequatur cum eligendi sapiente recusandae autem ullam doloremque dolorem quos saepe aspernatur ipsum, quo velit amet!</p>
+    </div>
+    <div class="box"></div>
+</body>
+</html>
