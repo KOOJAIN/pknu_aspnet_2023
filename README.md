@@ -42,3 +42,5 @@ ASP.NET Core MVC 게시판
 ## 5일차
 - ASP.NET MVC
     - 게시판 계속
+
+<img src="https://github.com/KOOJAIN/pknu_aspnet_2023/blob/main/images/aspnet04.gif?raw=true" width="700">
