@@ -1,9 +1,10 @@
 ﻿using aspnet02_boardapp.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace aspnet02_boardapp.Data
 {   // DbContent는 EntityFrameworkCore안에 기본으로 있는것
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext // 1. ASP.NET Identity : DbContext -> IdentityDbContext   
     {
         // 생성자 alt+tab해서 자동생성
         public ApplicationDbContext(DbContextOptions options) : base(options)

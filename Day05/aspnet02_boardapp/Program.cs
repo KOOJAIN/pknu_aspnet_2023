@@ -1,4 +1,5 @@
 using aspnet02_boardapp.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MySqlConnector;
 
@@ -24,6 +25,11 @@ namespace aspnet02_boardapp
                 // 연결문자열로 DB의 서버 버전을 자동으로 가져올것. 위의 DefaultConnection의 DB정보와 합쳐서 사용
                 ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
             ));
+            // 2. ASP.NET Identity - ASP.NET 계정을 위한 서비스 설정
+            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores();
+                
 
             var app = builder.Build();
 
@@ -39,8 +45,8 @@ namespace aspnet02_boardapp
             app.UseStaticFiles();
 
             app.UseRouting();
-
-            app.UseAuthorization();
+            app.UseAuthentication(); // 3. ASP.NET Identity - 계정 추가
+            app.UseAuthorization(); // 
 
             app.MapControllerRoute(
                 name: "default",
