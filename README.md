@@ -91,6 +91,9 @@ ASP.NET Core MVC 게시판
 - 개인 포트폴리오 웹
     - 부트스트랩 테마 재적용
 
+<img src="https://github.com/KOOJAIN/pknu_aspnet_2023/blob/main/images/aspnet9.gif?raw=true" width="700">
+
+
 ## 11일차
 - ASP.NET RestAPI
     - RestAPI Server 체크
@@ -113,3 +116,4 @@ RestAPI사용 WPF App 및 Web 화면
 
 
 <img src="https://github.com/KOOJAIN/pknu_aspnet_2023/blob/main/images/restapi03.png?raw=true" width="700">
+
