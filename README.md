@@ -90,3 +90,26 @@ ASP.NET Core MVC 게시판
     - WPF Cilent
 - 개인 포트폴리오 웹
     - 부트스트랩 테마 재적용
+
+## 11일차
+- ASP.NET RestAPI
+    - RestAPI Server 체크
+    - FrontEnd Server 작업
+
+## 12일차
+- ASP.NET RestAPI
+    - RestAPI Server 수정
+    - FrontEnd Server 작업계속
+    
+RestAPI사용 FrontEnd Web
+
+
+## 13일차
+- ASP.NET RestAPI
+    - RestAPI Server 수정
+    - FrontEnd Server 작업계속
+
+RestAPI사용 WPF App 및 Web 화면
+
+
+<img src="https://github.com/KOOJAIN/pknu_aspnet_2023/blob/main/images/restapi03.png?raw=true" width="700">
